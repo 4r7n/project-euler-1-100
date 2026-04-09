@@ -1,1 +1,1 @@
-print(sum([(i+1)*sum([ord(ch)-64 for ch in it]) for i, it in enumerate(sorted(open("p22_names.txt", "r").read().replace('"', "").split(",")))]) or open("p22_names.txt", "r").close()) #okay
+print(sum([(i+1)*sum([ord(ch)-64 for ch in it]) for i, it in enumerate(sorted(open("p22_names.txt", "r").read().replace('"', "").split(",")))])) #okay
