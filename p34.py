@@ -1,0 +1,1 @@
+print(sum([k for k in range(3,10**5-1) if k==sum([(lambda x: 0*[l:=1]or([1]+[l:=l*j for j in range(1,x+1)])[-1])(int(i)) for i in str(k)])]))
