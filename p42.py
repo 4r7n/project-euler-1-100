@@ -1,0 +1,1 @@
+print(len([i for i in open("p42_words.txt", "r").read().replace('"', "").split(",") if sum([ord(ch)-64 for ch in i]) in [int(0.5*(n**2+n)) for n in range(1, 19)]]))
