@@ -1,0 +1,1 @@
+print(sum([k for k in [i for i in range(1, 1000000) if not (i%2==0) and str(i)==str(i)[::-1]] if str(bin(k))[2:]==(str(bin(k))[2:])[::-1]]))
