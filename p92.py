@@ -6,7 +6,7 @@ def step(n):
 
     Next = sum(int(s)**2 for s in str(n)) #iterate through the number as if it were a string then square each digit and add them all up
 
-    res = step(Next)  #call the function with the next number, until we reach 1 or 89
+    res = step(Next)  #call the function with the next number, and keep calling until we reach 1 or 89
 
     cache[n] = res  #this way all the numbers in the process will be marked as true or false, so the next time we reach this number in any chain, we can instantly deduce it and all numbers before.
 
