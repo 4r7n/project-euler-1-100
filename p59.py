@@ -9,10 +9,10 @@ while True:
     D = decrypt(F, k)
 
     if all(32 <= c < 127 for c in D):
-        text = "".join(map(chr, D))
+        T = "".join(map(chr, D))
 
-        if " the " in text:
-            print(text)
+        if " the " in T:
+            print(T)
 
             print("\n", sum(D))
             break
